@@ -11,7 +11,7 @@ To contribute to this project, just fork the project, change anything, then send
 
 ## Discord
 
-You can join the Discord and talk to the growing Fotnitr community here(https://discord.gg/S8E9sRgE6x)
+You can join the Discord and talk to the growing Fotnitr community [here](https://discord.gg/S8E9sRgE6x)
 
 ## Legal Issues
 
