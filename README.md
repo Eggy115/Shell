@@ -28,7 +28,7 @@ Contributions to this repository are welcome and encouraged. If you have a shell
 
 ## License
 
-All code in this repository is licensed under the GPL v3 License. See the `LICENSE` file for more information.
+All code in this repository is licensed under the GPL v3 License. See the [LICENSE](./LICENSE) file for more information.
 
 ## Disclaimer
 
