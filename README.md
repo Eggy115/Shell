@@ -14,9 +14,9 @@ This repository contains a collection of shell scripts for various purposes. Eac
 
 The following scripts are available in this repository:
 
-- `script1.sh`: A script that does X.
-- `script2.sh`: A script that does Y.
-- `script3.sh`: A script that does Z.
+- `i.sh`: A script that does X.
+- `cant.sh`: A script that does Y.
+- `be bothered.sh`: A script that does Z.
 
 ## Usage
 
