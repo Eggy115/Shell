@@ -1,14 +1,20 @@
 #!/bin/bash
-#功能描述(Description):脚本自动生成10以内的随机数,根据用户的输入,输出判断结果.
+#功能描述(Description):猜数字小游戏,统计猜的次数.
 
-clear
-num=$[RANDOM%10+1]
-read -p "请输入1-10之间的整数:" guess
-
-if [ $guess -eq $num ];then
-    echo "恭喜,猜对了,就是:$num"
-elif [ $guess -lt $num ];then
-    echo "Oops,猜小了."
-else
-    echo "Oops,猜大了."
-fi
+num=$[RANDOM%100]
+count=0
+while :
+do
+    read -p "一个1-100的随机数,你猜是多少:" guess
+    #使用正则匹配,判断是否输入了字母或符号等无效输入.
+    [[ $guess =~ [[:alpha:]] ||  $guess =~ [[:punct:]] ]] && echo "无效输入." && exit
+    let count++
+    if [ $guess -eq $num ];then
+        echo "恭喜,你猜对了,总共猜了$count次!"
+        exit
+    elif [ $guess -gt $num ];then
+        echo "Oops,猜大了."
+    else
+        echo "Oops,猜小了."
+    fi
+done
